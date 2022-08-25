@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(257deg 10% 25%);
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(257deg 40% 49%);
+}
+
+.landing-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: sans-serif;
+    line-height: 1.2;
+    
+}
+
+.Huddle{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem
+    
+    
+}
+
+.huddleimage{
+    margin-left: 15%;
+
+}
+
+.logo{
+    margin-top: 10%;
+    width: 200px;
+}
+
+.landingimg{
+    margin-top: 8%;
+}
+
+.text-info{
+    margin: 200px auto 20px 100px;
+    max-width: 70%;
+
+}
+
+.text-info h1{
+    color: white;
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+.text-info p{
+    padding-top: 1.2rem;
+    color: white;
+    line-height: 1.3;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.text-info a{
+    text-decoration: none;
+    padding: 25px 80px;
+    color: hsl(257deg 40% 49%);
+    background-color: white;
+    border-radius: 2rem;
+
+
+}
+
+.text-info a:hover{
+    background-color: violet;
+}
+
+
+.fa{
+    padding: 10px 10px;
+    
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   
+    text-align: center;  
+      margin: 5px 8px ;  
+      font-size: 15px;  
+      width: 30px;  
+        border-radius: 50%;
+}
+
+.fa-facebook:hover{
+    background-color: hsl(257deg 40% 49%);
+}
+.fa-twitter:hover{
+    background-color: hsl(257deg 40% 49%);
+}
+.fa-instagram:hover{
+    background-color: hsl(257deg 40% 49%);
+    
+}
+
+
+.fa-facebook{
+
+ color: white;  
+    text-decoration: none;
+    stroke: blue;
+    border: 1px solid white;
+}
+
+.fa-twitter{
+    stroke: white;
+    color: white;
+   
+    text-decoration: none;
+    border: 1px solid white;
+    
+}
+.fa-instagram{
+    stroke: white;
+    color: white;
+    border: 1px solid white;
+   
+    text-decoration: none;
+    
+}
+
+
+
+.social-icons{
+    display: flex;
+
+    margin-top: 48%;
+    position: absolute;
+   right: 8%;
+   gap: 5px;
+}
+
+@media (max-width: 400px){
+   
+    .Huddle{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    margin: auto;
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 15%;
+    margin-left: 5%;
+
+    }
+
+    .text-info{
+        grid-template-columns: 1fr;
+       text-align: center;
+       line-height: 1.6;
+       margin: auto;
+  margin-left: 25%;
+  
+       
+    }
+    .text-info h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .text-info p{
+        font-size: 1.9rem;
+    }
+    .text-info a{
+        padding: 1rem 8rem;
+    }
+
+
+    .fa{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+
+    }
+
+
+    .landingimg{
+        height: 70%;
+
+    }
+
+   
+ 
+
+}
